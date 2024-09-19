@@ -1,0 +1,22 @@
+node_modules
+build
+logs
+.DS_Store
+dist
+
+.eslintcache
+*.mp3
+
+# webstorm config
+.idea
+
+# Ignore all files in these directories
+uploads/*
+images/*
+
+# Except for the .gitkeep files
+!uploads/.gitkeep
+!images/.gitkeep
+
+# Sentry Config File
+.sentryclirc
