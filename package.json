@@ -14,7 +14,7 @@
     "husky-install": "husky install",
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:seeds": "npx sequelize-cli db:seed:all",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org fractal-labs-oj --project mydiligence ./out && sentry-cli sourcemaps upload --org fractal-labs-oj --project mydiligence ./out"
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org fractal-labs-oj --project mydiligence ./dist && sentry-cli sourcemaps upload --org fractal-labs-oj --project mydiligence ./dist"
   },
   "engines": {
     "node": "20.17.0",
