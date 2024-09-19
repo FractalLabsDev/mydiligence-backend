@@ -4,8 +4,9 @@
   "description": "MyDiligence is a platform helping homeowners perform due diligence on contractors for home improvement projects by generating substantiated and easily digestible recommendations and reports.",
   "main": "index.js",
   "scripts": {
+    "init": "ts-patch install -s",
     "test": "jest --detectOpenHandles",
-    "build": "yarn db:migrate && npx tsc && yarn sentry:sourcemaps",
+    "build": "yarn db:migrate && npx tsc && tsc-alias && yarn sentry:sourcemaps",
     "start": "yarn build && node ./dist/server.js --env=production",
     "dev": "nodemon --watch ./src/** --exec ts-node -r tsconfig-paths/register src/server.ts",
     "script": "ts-node src/script/index.ts",
@@ -80,7 +81,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-security": "^3.0.1",
     "sequelize-cli": "^6.6.2",
-    "typescript": "^5.6.2"
+    "ts-patch": "^3.2.1",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.6.2",
+    "typescript-transform-paths": "^3.5.1"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
