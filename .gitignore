@@ -17,6 +17,3 @@ images/*
 # Except for the .gitkeep files
 !uploads/.gitkeep
 !images/.gitkeep
-
-# Sentry Config File
-.sentryclirc
